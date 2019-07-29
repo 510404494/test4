@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>复习案例</title>
+</head>
+<body>
+<a href="/create/">创建</a>
+<ul>
+{%for book in list%}
+    <li>{{book.btitle}}--<a href="/delete{{book.id}}/">删除</a></li>
+{%endfor%}
+</ul>
+</body>
+</html>
